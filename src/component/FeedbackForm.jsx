@@ -3,8 +3,6 @@ import Card from './shared/Card.jsx';
 import Button from './shared/Button.jsx';
 import RatingSelect from './RatingSelect.jsx';
 import FeedbackContext from '../context/FeedbackContext.js';
-import { object } from 'prop-types';
-
 function FeedbackForm() {
 
   const [text, setText] = useState('')

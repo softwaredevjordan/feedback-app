@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import {BrowserRouter as Router, Route, Routes, NavLink} from 'react-router-dom'
+import React from 'react'
+import {BrowserRouter as Router, Route, Routes,} from 'react-router-dom'
 import Header from './component/Header.jsx'
 import FeedbackList from './component/FeedbackList.jsx'
 import FeedbackStats from './component/FeedbackStats.jsx'
@@ -14,7 +14,7 @@ function App() {
 return(
 <FeedbackProvider>   
     <Router>     
-        <Header  />
+        <Header text='Feedback app' />
             <div className = 'container'>
                 <Routes>
                     <Route exact path='/' element={
